@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peters Inn - 3-Tier Premium Dormitory in Thiruvananthapuram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Ionicons for clean icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="logo-container">
+                <!-- Using an img tag. Will show alt text if logo.png is missing -->
+                <img src="logo.png" alt="Peters Inn Logo" class="logo-img" onerror="this.style.display='none'">
+                <span class="logo-text">Peters Inn</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="booking.html" class="btn btn-primary">Pre-Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Experience Premium Comfort at Affordable Prices</h1>
+            <p class="hero-subtitle">Thiruvananthapuram's first 3-tier railway-style air-conditioned dormitory. Ideal for students, professionals, and travelers on short stays.</p>
+            <div class="hero-btns">
+                <a href="booking.html" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Pre-Book Your Stay</a>
+                <a href="#pricing" class="btn" style="background: white; border: 1px solid var(--border);">View Pricing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Peters Inn?</h2>
+            <p class="section-subtitle">We revolutionized the dormitory experience combining the space-efficiency of railway berths with modern premium amenities.</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <ion-icon name="bed-outline" class="about-icon"></ion-icon>
+                    <h3>3-Tier Layout</h3>
+                    <p>Innovative railway-style Upper, Middle, and Lower berths offering privacy and comfort.</p>
+                </div>
+                <div class="about-card">
+                    <ion-icon name="snow-outline" class="about-icon"></ion-icon>
+                    <h3>Fully Air Conditioned</h3>
+                    <p>Beat the heat of Thiruvananthapuram with our 24/7 central air-conditioning system.</p>
+                </div>
+                <div class="about-card">
+                    <ion-icon name="male-female-outline" class="about-icon"></ion-icon>
+                    <h3>Separate Dorms</h3>
+                    <p>Dedicated completely separate dormitory sections for men and women.</p>
+                </div>
+                <div class="about-card">
+                    <ion-icon name="wallet-outline" class="about-icon"></ion-icon>
+                    <h3>Highly Affordable</h3>
+                    <p>Unbeatable pricing starting at just ₹299 per day, perfect for short 1-2 day stays.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section pricing">
+        <div class="container">
+            <h2 class="section-title">Simple, Affordable Pricing</h2>
+            <p class="section-subtitle">Choose the berth that fits your comfort and budget. Prices are per day.</p>
+            
+            <div class="pricing-cards">
+                <!-- Upper Berth -->
+                <div class="price-card">
+                    <h3 class="price-title">Upper Berth</h3>
+                    <div class="price-amount">₹299<span>/day</span></div>
+                    <ul class="price-features">
+                        <li>Privacy & elevated comfort</li>
+                        <li>AC Included</li>
+                        <li>Fresh Linens</li>
+                    </ul>
+                    <a href="booking.html?berth=upper" class="btn btn-primary">Select Upper</a>
+                </div>
+
+                <!-- Lower Berth (Featured) -->
+                <div class="price-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <h3 class="price-title">Lower Berth</h3>
+                    <div class="price-amount">₹499<span>/day</span></div>
+                    <ul class="price-features">
+                        <li>Easy access & space</li>
+                        <li>AC Included</li>
+                        <li>Fresh Linens</li>
+                    </ul>
+                    <a href="booking.html?berth=lower" class="btn btn-primary">Select Lower</a>
+                </div>
+
+                <!-- Middle Berth -->
+                <div class="price-card">
+                    <h3 class="price-title">Middle Berth</h3>
+                    <div class="price-amount">₹399<span>/day</span></div>
+                    <ul class="price-features">
+                        <li>Perfect balance</li>
+                        <li>AC Included</li>
+                        <li>Fresh Linens</li>
+                    </ul>
+                    <a href="booking.html?berth=middle" class="btn btn-primary">Select Middle</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <h2 class="section-title">Our Facilities</h2>
+            <p class="section-subtitle">Take a look inside our modern dormitory designed for your comfort.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/dorm1.jpg" alt="Peters Inn Dormitory View 1" onerror="this.src='https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&q=80&w=800'; this.onerror=null;">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dorm2.jpg" alt="Peters Inn Dormitory View 2" onerror="this.src='https://images.unsplash.com/photo-1522771731478-44eb10e5e4bd?auto=format&fit=crop&q=80&w=800'; this.onerror=null;">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dorm3.jpg" alt="Peters Inn Dormitory View 3" onerror="this.src='https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=800'; this.onerror=null;">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dorm4.jpg" alt="Peters Inn Dormitory View 4" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800'; this.onerror=null;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="section location-contact">
+        <div class="container">
+            <div class="lc-grid">
+                <!-- Location -->
+                <div class="location-card">
+                    <h3>Location</h3>
+                    <address>
+                        <strong>Peters Inn</strong><br>
+                        Premier Towers<br>
+                        Ayurveda College Junction<br>
+                        MG Road<br>
+                        Thiruvananthapuram
+                    </address>
+                    <a href="https://maps.app.goo.gl/LTYJ84jFQqY7FSuh9" target="_blank" rel="noopener noreferrer" class="map-link">Open in Google Maps &rarr;</a>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.07165576722!2d76.9458694!3d8.4923838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bb001099e2ed%3A0xc3f8319e766e4ca8!2sAyurveda%20College%20Jn%2C%20Thiruvananthapuram%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="contact-card">
+                    <h3>Contact Us</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <ion-icon name="call"></ion-icon>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:07736688181">07736688181</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:petersinn@gmail.com">petersinn@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 0.5rem;">Quick replies on WhatsApp</p>
+                        <a href="https://wa.me/917736688181" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+                            <ion-icon name="logo-whatsapp" style="font-size: 1.5rem;"></ion-icon>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Peters Inn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
