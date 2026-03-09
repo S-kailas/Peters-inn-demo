@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Collect Form Data 
             const formData = new FormData(form);
             const dataToEmail = {
-                to: "petersinn@gmail.com", // Placeholder Email specified in instructions
+                to: "kailasdefence@gmail.com", // Placeholder Email specified in instructions
                 name: formData.get('fullName'),
                 phone: formData.get('phoneNumber'),
                 gender: formData.get('gender'),
