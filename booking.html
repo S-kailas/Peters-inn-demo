@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body class="booking-page">
 
     <!-- Navigation -->
@@ -30,7 +32,8 @@
     <header class="booking-header">
         <div class="container">
             <h1>Pre-Book Your Stay</h1>
-            <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto;">Submit the form below to request a booking. We will review your request and contact you via email or phone to confirm availability.</p>
+            <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto;">Submit the form below to request a booking. We
+                will review your request and contact you via email or phone to confirm availability.</p>
         </div>
     </header>
 
@@ -39,15 +42,17 @@
         <div class="container">
             <div class="booking-card">
                 <form id="preBookingForm" action="#" method="POST">
-                    
+
                     <div class="form-group">
                         <label for="fullName" class="form-label">Full Name</label>
-                        <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name" required>
+                        <input type="text" id="fullName" name="fullName" class="form-control"
+                            placeholder="Enter your full name" required>
                     </div>
 
                     <div class="form-group">
                         <label for="phoneNumber" class="form-label">Phone Number</label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="e.g. +91 9876543210" required>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control"
+                            placeholder="e.g. +91 9876543210" required>
                         <div class="form-help">Include country code for international numbers.</div>
                     </div>
 
@@ -80,7 +85,7 @@
                         <span id="btnText">Submit Booking Request</span>
                         <div class="loader" id="btnLoader"></div>
                     </button>
-                    
+
                     <p style="text-align: center; margin-top: 1rem; font-size: 0.875rem; color: var(--text-light);">
                         No payment required now. This is only a request.
                     </p>
@@ -97,10 +102,16 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init("fgKx-L93rPLaBWVRw");
+    </script>
+
     <script src="js/form.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-        
+
         // Auto-select berth based on URL params (e.g. from Pricing section)
         window.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams(window.location.search);
@@ -114,11 +125,12 @@
                     }
                 }
             }
-            
+
             // Set min date to today for check-in
             const today = new Date().toISOString().split('T')[0];
             document.getElementById('checkInDate').setAttribute('min', today);
         });
     </script>
 </body>
+
 </html>
